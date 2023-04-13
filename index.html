@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facial Recognition Attendance System</title>
+</head>
+<style>
+body {
+  font-family: "Gill Sans", sans-serif;
+  background-color: #B0DAFF;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #DAF5FF;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="file"] {
+  display: block;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+}
+
+input[type="submit"] {
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: #ABC4AA;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+</style>
+<body>
+    <h1>Facial Recognition Attendance System</h1>
+    <form method="POST" enctype="multipart/form-data" action="/upload">
+        <input type="file" name="image">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
